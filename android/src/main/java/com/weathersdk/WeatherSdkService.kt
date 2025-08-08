@@ -11,7 +11,7 @@ interface WeatherSdkService {
     @GET("weather")
     fun getWeatherByCity(
         @Query("q") city: String,       // City name, e.g. "London"
-        @Query("appid") apiKey: String = WeatherSdkConfig.OPEN_WEATHER_API_KEY
+        @Query("appid") apiKey: String = WeatherSdkConfig.OPEN_WEATHER_API_KEY,
         @Query("units") units: String = "metric"
     ): Call<WeatherSdkResponse>
 
@@ -20,7 +20,7 @@ interface WeatherSdkService {
     fun getWeatherByCoordinates(
         @Query("lat") lat: Double,      // Latitude value, e.g. 35.0
         @Query("lon") lon: Double,      // Longitude value, e.g. 139.0
-        @Query("appid") apiKey: String = WeatherSdkConfig.OPEN_WEATHER_API_KEY
+        @Query("appid") apiKey: String = WeatherSdkConfig.OPEN_WEATHER_API_KEY,
         @Query("units") units: String = "metric"
     ): Call<WeatherSdkResponse>
 }

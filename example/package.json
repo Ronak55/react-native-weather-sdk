@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@react-native-community/geolocation": "^3.4.0",
+    "@react-native/gradle-plugin": "^0.80.2",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-screens": "^4.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -26,7 +28,8 @@
     "@react-native/typescript-config": "0.79.2",
     "@types/react": "^19.0.0",
     "react-native-builder-bob": "^0.40.8",
-    "react-native-monorepo-config": "^0.1.9"
+    "react-native-monorepo-config": "^0.1.9",
+    "react-native-weather-sdk": "file:.."
   },
   "engines": {
     "node": ">=18"

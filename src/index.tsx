@@ -1,5 +1,5 @@
 import NativeWeatherSdk from './NativeWeatherSdk';
-import { type WeatherData } from './types'
+import { type WeatherData } from './types';
 
 /**
  * Fetch weather data by city name

@@ -6,4 +6,4 @@ export interface Spec extends TurboModule {
   fetchWeatherByCoordinates(lat: number, lon: number): Promise<any>;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('WeatherSdk');
+export default TurboModuleRegistry.getEnforcing<Spec>("WeatherSdk");

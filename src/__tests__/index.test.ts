@@ -12,10 +12,10 @@ jest.mock('../NativeWeatherSdk', () => ({
 
 describe('WeatherSdk JavaScript Bridge', () => {
   const mockWeatherData: WeatherData = {
-    cityName: 'London',
+    city: 'London',
     temperature: 20,
     description: 'Cloudy',
-    iconUrl: 'http://example.com/icon.png',
+    icon: 'http://example.com/icon.png',
     humidity: 50,
     windSpeed: 10,
   };
